@@ -6,7 +6,7 @@ const submitBtn = document.querySelector("button");
 async function getWeatherInfo(city){
         try {
             if(city){
-                const apikey = "ebf52c33ebd8ff5d573069fa6b77b01d";      
+                const apikey = "1f687a1139c3c334beef06e6d8ffea27";      
                 const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
                 const data = await fetch(api);
                 const response = await data.json();
